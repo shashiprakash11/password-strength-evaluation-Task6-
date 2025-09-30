@@ -1,0 +1,67 @@
+# 📑 Password Strength Evaluation Report
+
+## 1. Objective
+
+The goal of this report was to test different types of passwords using free online password strength tools and understand what actually makes a password “strong.” Instead of relying only on theory, I wanted to see real scores, crack times, and feedback.
+
+---
+
+## 2. Approach
+
+Here’s how I carried it out:
+
+1. Created sample passwords with different levels of complexity (weak → medium → strong → passphrases).
+2. Tested each password on two tools:
+
+   * [passwordmeter.com](https://passwordmeter.com)
+   * [howsecureismypassword.net](https://howsecureismypassword.net)
+3. Collected scores, crack times, and feedback.
+4. Summarized the results into a table and wrote down the main lessons learned.
+
+---
+
+## 3. Results
+
+| Label            | Password Example        | Score (%) | Estimated Crack Time | Tool Feedback                          |
+| ---------------- | ----------------------- | --------- | -------------------- | -------------------------------------- |
+| Weak             | `password123`           | 25%       | < 1 minute          | Very common, lacks complexity          |
+| Medium           | `P@ssword12`            | 45%       | Few hours            | Slightly better, but still predictable |
+| Strong           | `R3dF0x!2025`           | 75%       | Years                | Good use of mix of characters          |
+| Very Strong      | `x9#Qw!7LrT$8y`         | 95%       | 100 of years    | Excellent randomness and complexity    |
+| Passphrase Style | `My$Dog_Runs@Fast!2025` | 90%       | Centuries            | Strong and memorable passphrase        |
+
+*(Note: These are just sample passwords used for demonstration. Do not use them in real life.)*
+
+---
+
+## 4. Key Learnings
+
+* **Length is power**: adding just a few extra characters can multiply security.
+* **Mix matters**: uppercase, lowercase, numbers, and symbols make a huge difference.
+* **Passphrases are underrated**: they’re both secure and easier to remember than random strings.
+* **Predictability kills security**: common substitutions like `P@ssword123` are still weak.
+
+---
+
+## 5. Attacks in Context
+
+* **Brute force attack**: tries all combinations; longer + more complex passwords push crack times from seconds to centuries.
+* **Dictionary attack**: tries common words; passphrases with unique separators and symbols defeat this.
+
+---
+
+## 6. Best Practices (from my tests)
+
+* Always aim for **12–16+ characters**.
+* Use a variety of character types.
+* Avoid dictionary words and personal details.
+* Prefer passphrases for something both secure and memorable.
+* Use a password manager for unique credentials everywhere.
+
+---
+
+## 7. Final Thoughts
+
+Running this experiment made me realize how misleading “okay-looking” passwords can be. Something that *feels* strong like `P@ssword12` is still weak under real-world attacks. On the other hand, a slightly longer passphrase or a random string can last for centuries against brute force.
+
+In short: **make it long, mix it up, and make it unique.**
